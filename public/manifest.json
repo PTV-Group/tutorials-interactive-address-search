@@ -1,0 +1,9 @@
+{
+  "short_name": "Interactive Address Search",
+  "name": "Interactive Address Search",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,42 @@
+.dropdown {
+  padding-right: 10px;
+  background-color: white;
+  outline-color: grey;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+ul {
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+.caption {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.subCaption {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: smaller;
+}
+
+.activeListElement {
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
+  list-style: none;
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.listElement {
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
+  list-style: none;
+  cursor: pointer;
+}

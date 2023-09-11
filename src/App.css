@@ -1,0 +1,13 @@
+.map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.search {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
