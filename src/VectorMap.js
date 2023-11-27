@@ -4,13 +4,7 @@ import { useCallback, useRef, useEffect, useState, useMemo } from "react";
 import { Map, Marker, Popup } from "react-map-gl/maplibre";
 
 const mapStyleUrl = "https://vectormaps-resources.myptv.com/styles/latest/standard.json";
-const initialViewport = {
-  longitude: 8.4055677,
-  latitude: 49.0070036,
-  zoom: 10,
-  pitch: 0,
-  bearing: 0
-};
+
 const markerColor = "#4268F9";
 
 const VectorMap = (props) => {
@@ -107,8 +101,9 @@ const VectorMap = (props) => {
     <Map
       ref={mapRef}
       mapStyle={mapStyleUrl}
-      initialViewState={initialViewport}
-      transformRequest={(url, resourceType) => applyApiKey(url, resourceType)}>
+      initialViewState={props.initialViewState}
+      transformRequest={(url, resourceType) => applyApiKey(url, resourceType)}
+      onMove={props.onMove}>
       {markers}
       {!!popupInfo && (
         <Popup

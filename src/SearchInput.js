@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Dropdown } from "./Dropdown"
 
-const suggestRequest = (input, apiKey) => `https://api.myptv.com/geocoding/v1/suggestions/by-text?searchText=${input}&apiKey=${apiKey}`;
+const suggestRequest = (input, apiKey, center) => `https://api.myptv.com/geocoding/v1/suggestions/by-text?searchText=${input}&center=${center.latitude},${center.longitude}&apiKey=${apiKey}`;
 const geocodeRequest = (input, apiKey) => `https://api.myptv.com/geocoding/v1/locations/by-text?searchText=${input}&apiKey=${apiKey}`;
 
 
@@ -38,7 +38,7 @@ const SearchInput = (props) => {
 
   const suggest = (input) => {
     fetch(
-      suggestRequest(input, props.apiKey)
+      suggestRequest(input, props.apiKey, props.center)
     ).then(
       response => response.json()
     ).then(({ suggestions }) => {
