@@ -8,4 +8,4 @@ This tutorial implements a simple single field search control that uses suggesti
 - Run `npm start` to start the application.
 #
 ### Try it <a href="https://developer-applications.myptv.com/Tutorials/Geocoding/interactive-address-search/index.html" target="_blank">here</a>.
-### Read the <a href="https://developer.myptv.com/en/resources/tutorials/Geocoding/interactive-address-search" target="_blank">complete tutorial</a> on PTV Developer.
+### Read the <a href="https://developer.myptv.com/en/resources/tutorials/Geocoding/interactive-address-search-preview" target="_blank">complete tutorial</a> on PTV Developer.
